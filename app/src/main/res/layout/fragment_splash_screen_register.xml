@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".splash_creen.Splash_screen_register">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/editTextTextPassword2"
+            android:layout_width="0dp"
+            android:layout_height="050dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/textview_bacround"
+            android:ems="10"
+            android:hint=" Re Password"
+            android:inputType="textPassword"
+            android:paddingLeft="20dp"
+            android:textColorHint="#9D7EFD"
+            app:layout_constraintBottom_toTopOf="@+id/register_register_btn"
+            app:layout_constraintEnd_toEndOf="@+id/register_register_btn"
+            app:layout_constraintStart_toStartOf="@+id/register_register_btn"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/register_register_btn"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="60dp"
+            android:backgroundTint="#9D7EFD"
+            android:text="Register"
+            app:cornerRadius="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="15dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/splah_creen_hello" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:text="HI.  We are so glad to see you in the water community."
+            android:textColor="#FFFFFF"
+
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/login_toregister_textview"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="-5dp"
+            android:text="*Do you already have an account?"
+            android:textColor="#3884F4"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/register_register_btn"
+            app:layout_constraintTop_toBottomOf="@+id/register_register_btn" />
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress2"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/textview_bacround"
+            android:ems="10"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="20dp"
+            android:textColorHint="#9D7EFD"
+            app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
+            app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="0dp"
+            android:layout_height="050dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/textview_bacround"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingLeft="20dp"
+            android:textColorHint="#9D7EFD"
+            app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword2"
+            app:layout_constraintEnd_toEndOf="@+id/register_register_btn"
+            app:layout_constraintStart_toStartOf="@+id/register_register_btn"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
