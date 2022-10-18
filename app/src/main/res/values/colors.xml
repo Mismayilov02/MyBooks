@@ -8,5 +8,17 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="purple">#9D7EFD</color>
-    <color name="artel_dialog_color">#E93C3B3B</color>
+    <color name="purple_text">#BF9D7EFD</color>
+    <color name="red">#D60101</color>
+    <color name="red_dark">#7C0101</color>
+    <color name="hint_text_red">#C9D83D3D</color>
+    <color name="orange">#F65003</color>
+    <color name="orange_dark">#C14F03</color>
+    <color name="green">#00DA30</color>
+    <color name="green_dark">#198701</color>
+    <color name="blue">#00EDD1</color>
+    <color name="bluedark">#029C8A</color>
+    <color name="artel_dialog_color">#F53C3B3B</color>
+    <color name="cardiew_backround">#6B4C4C4C</color>
+    <color name="cardiew_backround_sellect">#6B854D4D</color>
 </resources>

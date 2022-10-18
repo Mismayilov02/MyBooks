@@ -4,8 +4,14 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/ISMAYILOV MEHEMMED/Mybooks/app/src/main/res/drawable-v24/arteldialoq_backround.xml" value="0.2555" />
+        <entry key="..\:/ISMAYILOV MEHEMMED/Mybooks/app/src/main/res/drawable/action_backround.xml" value="0.2555" />
+        <entry key="..\:/ISMAYILOV MEHEMMED/Mybooks/app/src/main/res/drawable/adventure_backround.xml" value="0.2555" />
         <entry key="..\:/ISMAYILOV MEHEMMED/Mybooks/app/src/main/res/drawable/angle_left.xml" value="0.2555" />
         <entry key="..\:/ISMAYILOV MEHEMMED/Mybooks/app/src/main/res/drawable/bottom_menu_backround.xml" value="0.2555" />
+        <entry key="..\:/ISMAYILOV MEHEMMED/Mybooks/app/src/main/res/drawable/cloud_download.xml" value="0.2555" />
+        <entry key="..\:/ISMAYILOV MEHEMMED/Mybooks/app/src/main/res/drawable/copy.xml" value="0.2555" />
+        <entry key="..\:/ISMAYILOV MEHEMMED/Mybooks/app/src/main/res/drawable/date_edit_text_backronud.xml" value="0.2555" />
+        <entry key="..\:/ISMAYILOV MEHEMMED/Mybooks/app/src/main/res/drawable/drama_backround.xml" value="0.2555" />
         <entry key="..\:/ISMAYILOV MEHEMMED/Mybooks/app/src/main/res/drawable/ic_angle_right.xml" value="0.2555" />
         <entry key="..\:/ISMAYILOV MEHEMMED/Mybooks/app/src/main/res/drawable/ic_books.xml" value="0.2555" />
         <entry key="..\:/ISMAYILOV MEHEMMED/Mybooks/app/src/main/res/drawable/ic_headset.xml" value="0.2555" />
@@ -15,17 +21,22 @@
         <entry key="..\:/ISMAYILOV MEHEMMED/Mybooks/app/src/main/res/drawable/ic_settings.xml" value="0.2555" />
         <entry key="..\:/ISMAYILOV MEHEMMED/Mybooks/app/src/main/res/drawable/ic_user.xml" value="0.2555" />
         <entry key="..\:/ISMAYILOV MEHEMMED/Mybooks/app/src/main/res/drawable/menu_sellection.xml" value="0.2555" />
+        <entry key="..\:/ISMAYILOV MEHEMMED/Mybooks/app/src/main/res/drawable/pencil.xml" value="0.232" />
+        <entry key="..\:/ISMAYILOV MEHEMMED/Mybooks/app/src/main/res/drawable/romance_backround.xml" value="0.2555" />
         <entry key="..\:/ISMAYILOV MEHEMMED/Mybooks/app/src/main/res/drawable/textview_bacround.xml" value="0.2555" />
-        <entry key="..\:/ISMAYILOV MEHEMMED/Mybooks/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/ISMAYILOV MEHEMMED/Mybooks/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/ISMAYILOV MEHEMMED/Mybooks/app/src/main/res/layout/activity_splash_screen.xml" value="0.2259963768115942" />
+        <entry key="..\:/ISMAYILOV MEHEMMED/Mybooks/app/src/main/res/layout/book_cardview_designer.xml" value="0.252" />
         <entry key="..\:/ISMAYILOV MEHEMMED/Mybooks/app/src/main/res/layout/fragment_my_book_fragment.xml" value="0.20697463768115942" />
         <entry key="..\:/ISMAYILOV MEHEMMED/Mybooks/app/src/main/res/layout/fragment_personal_data_edit_fragment.xml" value="0.264" />
         <entry key="..\:/ISMAYILOV MEHEMMED/Mybooks/app/src/main/res/layout/fragment_profile_fragment.xml" value="0.264" />
         <entry key="..\:/ISMAYILOV MEHEMMED/Mybooks/app/src/main/res/layout/fragment_search_fragment.xml" value="0.20697463768115942" />
+        <entry key="..\:/ISMAYILOV MEHEMMED/Mybooks/app/src/main/res/layout/fragment_splash_screen_about_register.xml" value="0.2" />
         <entry key="..\:/ISMAYILOV MEHEMMED/Mybooks/app/src/main/res/layout/fragment_splash_screen_hello.xml" value="0.2259963768115942" />
-        <entry key="..\:/ISMAYILOV MEHEMMED/Mybooks/app/src/main/res/layout/fragment_splash_screen_login.xml" value="0.264" />
+        <entry key="..\:/ISMAYILOV MEHEMMED/Mybooks/app/src/main/res/layout/fragment_splash_screen_login.xml" value="0.4" />
         <entry key="..\:/ISMAYILOV MEHEMMED/Mybooks/app/src/main/res/layout/fragment_splash_screen_open.xml" value="0.2259963768115942" />
         <entry key="..\:/ISMAYILOV MEHEMMED/Mybooks/app/src/main/res/layout/fragment_splash_screen_open_fragment.xml" value="0.20697463768115942" />
+        <entry key="..\:/ISMAYILOV MEHEMMED/Mybooks/app/src/main/res/layout/fragment_splash_screen_open_text_register.xml" value="0.264" />
         <entry key="..\:/ISMAYILOV MEHEMMED/Mybooks/app/src/main/res/layout/fragment_splash_screen_register.xml" value="0.264" />
         <entry key="..\:/ISMAYILOV MEHEMMED/Mybooks/app/src/main/res/layout/loginsucees_layout.xml" value="0.1" />
         <entry key="..\:/ISMAYILOV MEHEMMED/Mybooks/app/src/main/res/menu/bottom_menu.xml" value="0.1" />

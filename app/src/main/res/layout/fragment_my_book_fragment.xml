@@ -6,9 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".home.screen.my_book_fragment">
 
-    <ImageView
-        android:id="@+id/imageView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_books" />
+    <ListView
+        android:id="@+id/my_book_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </FrameLayout>

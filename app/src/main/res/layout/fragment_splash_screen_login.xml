@@ -27,7 +27,13 @@
             app:layout_constraintStart_toStartOf="parent" />
 
         <com.airbnb.lottie.LottieAnimationView
-            android:id="@+id/animationView"
+            android:id="@+id/open_text_animation"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="15dp"
             app:layout_constraintBottom_toTopOf="@+id/textView"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -36,32 +42,26 @@
             app:layout_constraintVertical_bias="0.0"
             app:lottie_autoPlay="true"
             app:lottie_loop="true"
-            app:lottie_rawRes="@raw/splah_creen_hello"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="50dp"
-            android:layout_marginEnd="25dp"
-            android:layout_marginBottom="15dp" />
+            app:lottie_rawRes="@raw/splah_creen_hello" />
 
         <TextView
             android:id="@+id/textView"
-            app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
             android:layout_marginBottom="15dp"
-
             android:gravity="center"
             android:text="HI.  We are so glad to see you in the water community."
             android:textColor="#FFFFFF"
-            android:textSize="24sp" />
+
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/login_email_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
-            android:id="@+id/login_toregister_textview"
+            android:id="@+id/login_to_login_textview"
             android:layout_width="wrap_content"
 
             android:layout_height="wrap_content"
@@ -74,10 +74,7 @@
             app:layout_constraintTop_toBottomOf="@+id/login_login_btn" />
 
         <EditText
-            android:id="@+id/editTextTextEmailAddress2"
-            app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
-            app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
-            app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
+            android:id="@+id/login_email_text"
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_marginBottom="5dp"
@@ -87,10 +84,13 @@
             android:inputType="textEmailAddress"
             android:paddingLeft="20dp"
             android:textColorHint="#9D7EFD"
+            app:layout_constraintBottom_toTopOf="@+id/login_passwor_text"
+            app:layout_constraintEnd_toEndOf="@+id/login_passwor_text"
+            app:layout_constraintStart_toStartOf="@+id/login_passwor_text"
             tools:ignore="TouchTargetSizeCheck" />
 
         <EditText
-            android:id="@+id/editTextTextPassword"
+            android:id="@+id/login_passwor_text"
             android:layout_width="0dp"
             android:layout_height="050dp"
             android:layout_marginBottom="5dp"
@@ -104,6 +104,16 @@
             app:layout_constraintEnd_toEndOf="@+id/login_login_btn"
             app:layout_constraintStart_toStartOf="@+id/login_login_btn"
             tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageView
+            android:id="@+id/ilogin_pasword_eye"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/eye_hide"
+            app:layout_constraintBottom_toBottomOf="@+id/login_passwor_text"
+            app:layout_constraintEnd_toEndOf="@+id/login_passwor_text"
+            app:layout_constraintTop_toTopOf="@+id/login_passwor_text" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

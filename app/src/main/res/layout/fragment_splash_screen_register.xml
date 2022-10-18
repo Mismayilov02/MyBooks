@@ -11,17 +11,41 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="2 of 2"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/login_to_login_textview" />
+
+        <ImageView
+            android:id="@+id/register_to_about_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:rotationY="-180"
+            android:src="@drawable/angle_left"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <EditText
-            android:id="@+id/editTextTextPassword2"
+            android:id="@+id/register_confirmpassword_text"
             android:layout_width="0dp"
             android:layout_height="050dp"
             android:layout_marginBottom="15dp"
             android:background="@drawable/textview_bacround"
             android:ems="10"
-            android:hint=" Re Password"
+            android:hint=" Confirem Password"
             android:inputType="textPassword"
             android:paddingLeft="20dp"
-            android:textColorHint="#9D7EFD"
+            android:textColorHint="@color/purple"
             app:layout_constraintBottom_toTopOf="@+id/register_register_btn"
             app:layout_constraintEnd_toEndOf="@+id/register_register_btn"
             app:layout_constraintStart_toStartOf="@+id/register_register_btn"
@@ -35,7 +59,8 @@
             android:layout_marginEnd="25dp"
             android:layout_marginBottom="60dp"
             android:backgroundTint="#9D7EFD"
-            android:text="Register"
+            android:text="Sign up"
+            android:textSize="20sp"
             app:cornerRadius="15dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -43,7 +68,7 @@
             app:layout_constraintStart_toStartOf="parent" />
 
         <com.airbnb.lottie.LottieAnimationView
-            android:id="@+id/animationView"
+            android:id="@+id/open_text_animation"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_marginStart="25dp"
@@ -58,7 +83,7 @@
             app:layout_constraintVertical_bias="0.0"
             app:lottie_autoPlay="true"
             app:lottie_loop="true"
-            app:lottie_rawRes="@raw/splah_creen_hello" />
+            app:lottie_rawRes="@raw/register" />
 
         <TextView
             android:id="@+id/textView"
@@ -72,12 +97,12 @@
             android:textColor="#FFFFFF"
 
             android:textSize="24sp"
-            app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress2"
+            app:layout_constraintBottom_toTopOf="@+id/register_email_text"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
-            android:id="@+id/login_toregister_textview"
+            android:id="@+id/login_to_login_textview"
             android:layout_width="wrap_content"
 
             android:layout_height="wrap_content"
@@ -90,7 +115,7 @@
             app:layout_constraintTop_toBottomOf="@+id/register_register_btn" />
 
         <EditText
-            android:id="@+id/editTextTextEmailAddress2"
+            android:id="@+id/register_email_text"
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_marginBottom="5dp"
@@ -99,14 +124,14 @@
             android:hint="E-mail"
             android:inputType="textEmailAddress"
             android:paddingLeft="20dp"
-            android:textColorHint="#9D7EFD"
-            app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
-            app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
-            app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
+            android:textColorHint="@color/purple"
+            app:layout_constraintBottom_toTopOf="@+id/register_passwor_text"
+            app:layout_constraintEnd_toEndOf="@+id/register_passwor_text"
+            app:layout_constraintStart_toStartOf="@+id/register_passwor_text"
             tools:ignore="TouchTargetSizeCheck" />
 
         <EditText
-            android:id="@+id/editTextTextPassword"
+            android:id="@+id/register_passwor_text"
             android:layout_width="0dp"
             android:layout_height="050dp"
             android:layout_marginBottom="5dp"
@@ -115,8 +140,8 @@
             android:hint="Password"
             android:inputType="textPassword"
             android:paddingLeft="20dp"
-            android:textColorHint="#9D7EFD"
-            app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword2"
+            android:textColorHint="@color/purple"
+            app:layout_constraintBottom_toTopOf="@+id/register_confirmpassword_text"
             app:layout_constraintEnd_toEndOf="@+id/register_register_btn"
             app:layout_constraintStart_toStartOf="@+id/register_register_btn"
             tools:ignore="TouchTargetSizeCheck" />

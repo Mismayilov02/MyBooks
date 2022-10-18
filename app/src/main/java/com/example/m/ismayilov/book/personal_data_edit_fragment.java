@@ -2,8 +2,13 @@ package com.example.m.ismayilov.book;
 
 import android.app.DatePickerDialog;
 import android.content.Intent;
+import android.database.Cursor;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.net.Uri;
 import android.os.Bundle;
 
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 
@@ -15,9 +20,14 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.URI;
 import java.util.Calendar;
 
 
@@ -29,7 +39,9 @@ public class personal_data_edit_fragment extends Fragment {
     TextView personal_data_date_edit;
     DatePickerDialog.OnDateSetListener dateSetListener;
     Calendar calendar;
+     InputStream imageStream;
     String date;
+    Bitmap bmp;
     int day, moth, year;
 
 
@@ -50,8 +62,9 @@ public class personal_data_edit_fragment extends Fragment {
 
         personal_data_edit_image.setOnClickListener(view -> {
 
-                Intent galery= new Intent(Intent.ACTION_PICK , MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-                startActivityForResult(galery , 100);
+            Intent i = new Intent(Intent.ACTION_PICK,
+                    android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+            startActivityForResult(i, 100);
 
         });
 
@@ -95,6 +108,21 @@ public class personal_data_edit_fragment extends Fragment {
 
 
         return v;
+
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        final Uri imageUri = data.getData();
+
+        try {
+            imageStream = getActivity().getContentResolver().openInputStream(imageUri);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        final Bitmap selectedImage = BitmapFactory.decodeStream(imageStream);
+        personal_data_edit_image.setImageBitmap(selectedImage);
 
     }
 }
